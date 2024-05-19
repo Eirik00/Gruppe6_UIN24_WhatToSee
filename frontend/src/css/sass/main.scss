@@ -11,11 +11,6 @@
 
     main {
 
-        h2{
-            font-size: 30px;
-
-        }
-
         max-width: 500px;
         padding: 3rem;
         text-align: center;
@@ -25,19 +20,29 @@
         border: solid 3px black;
         min-height: 220px;
 
-        button{
+        h2{
+            font-size: 2rem;
+        }
+
+        h3{
             padding: 20px;
-            margin: 4px 4px;
-            border: solid 2 px black;
-            background-color: $custom-white;
+            font-size: 1.5rem;
+        }
+
+        a{
+            text-decoration: none;
+            padding: 20px;
+            margin: 10px;
+            border: solid 2px black;
+            color: black;
+            background-color: #e0e0e0;
             font-family: $font;
             font-size: 20px;
             border-radius: 25px;
         }
-        button:hover{
+        a:hover{
             background-color: $custom-red;
             color: $custom-white;
-            font-size: 25px;
         }
         
     

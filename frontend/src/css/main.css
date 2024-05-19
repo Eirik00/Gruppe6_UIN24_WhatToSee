@@ -16,21 +16,26 @@
   min-height: 220px;
 }
 :root body main h2 {
-  font-size: 30px;
+  font-size: 2rem;
 }
-:root body main button {
+:root body main h3 {
   padding: 20px;
-  margin: 4px 4px;
-  border: solid 2 px black;
-  background-color: #f2f4f5;
+  font-size: 1.5rem;
+}
+:root body main a {
+  text-decoration: none;
+  padding: 20px;
+  margin: 10px;
+  border: solid 2px black;
+  color: black;
+  background-color: #e0e0e0;
   font-family: "Freeman", sans-serif;
   font-size: 20px;
   border-radius: 25px;
 }
-:root body main button:hover {
+:root body main a:hover {
   background-color: #bd1c11;
   color: #f2f4f5;
-  font-size: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
