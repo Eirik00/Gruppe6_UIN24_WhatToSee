@@ -16,7 +16,7 @@ export default function Login(){
 
     return(
         <main>
-            <h2><MdMovieFilter />Velkommen til What-To-See<MdMovieFilter /></h2>
+            <h2><MdMovieFilter /> Velkommen til What-To-See <MdMovieFilter /></h2>
             <h3>Hvem skal logge inn?</h3>
             {users?.map((user, index) => <Link key={index} to="home">{user.username}</Link>)}
         </main>

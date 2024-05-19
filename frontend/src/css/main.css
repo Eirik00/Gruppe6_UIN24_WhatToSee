@@ -1,13 +1,36 @@
-body {
-  background-color: #9ba9bf;
+:root {
+  @import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+  font-family: "Freeman", sans-serif;
 }
-
-#root {
-  margin: 0 auto;
+:root body {
+  background-color: #bd1c11;
+}
+:root body main {
+  max-width: 500px;
   padding: 3rem;
   text-align: center;
-  background-color: #5574a6;
+  background-color: #f2f4f5;
   border-radius: 20px;
+  margin: 200px auto;
+  border: solid 3px black;
+  min-height: 220px;
+}
+:root body main h2 {
+  font-size: 30px;
+}
+:root body main button {
+  padding: 20px;
+  margin: 4px 4px;
+  border: solid 2 px black;
+  background-color: #f2f4f5;
+  font-family: "Freeman", sans-serif;
+  font-size: 20px;
+  border-radius: 25px;
+}
+:root body main button:hover {
+  background-color: #bd1c11;
+  color: #f2f4f5;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
