@@ -5,6 +5,32 @@
 :root body {
   background-color: #bd1c11;
 }
+:root body nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f4f5;
+  min-height: 3rem;
+  padding: 0 1rem;
+}
+:root body nav #logo {
+  justify-content: left;
+}
+:root body nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  width: 50%;
+}
+:root body nav ul li {
+  color: #f2f4f5;
+  text-decoration: none;
+  background-color: #991107;
+  padding: 2rem;
+  border-bottom: solid black 3px;
+}
 :root body main {
   max-width: 500px;
   padding: 3rem;

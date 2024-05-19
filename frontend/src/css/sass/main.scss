@@ -7,6 +7,46 @@
 
     body{
         background-color: $custom-red;
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: $custom-white;
+            min-height: 3rem;
+            padding: 0 1rem;
+
+            #logo{
+                justify-content: left;
+             
+              
+            }
+
+            ul{
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                margin-left: auto;
+                padding: 0;
+                width: 50%;
+                
+             
+
+                li{
+                    
+                    color: $custom-white;
+                    text-decoration: none;
+                    background-color: #991107;
+                    padding: 2rem;
+                    border-bottom: solid black 3px;
+                    
+                    
+                }
+            }
+            
+            
+        }
+        
         
 
     main {
