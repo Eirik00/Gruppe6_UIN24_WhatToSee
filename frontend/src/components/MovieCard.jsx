@@ -29,7 +29,7 @@ export default function MovieCard({movie}){
         <a href={"https://imdb.com/title/"+movieInfo?.id}>
             <article>
                 <img src={movieInfo?.primaryImage.url}></img>
-                <p>{movie.moviename + "(" + movie.releaseyear + ")"}</p>
+                <p>{movie.moviename + " (" + movie.releaseyear + ")"}</p>
             </article>
         </a>
     )
