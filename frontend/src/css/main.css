@@ -57,7 +57,7 @@ nav ul li:hover {
   }
 }
 
-article a img {
+a article img {
   width: 35rem;
   height: 50rem;
 }
@@ -96,10 +96,10 @@ article a img {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-:root body main #homepage #wishlist section article a {
+:root body main #homepage #wishlist section a article {
   width: 35%;
 }
-:root body main #homepage #wishlist section article a img {
+:root body main #homepage #wishlist section a article img {
   height: auto;
 }
 :root body main #homepage #userlist {

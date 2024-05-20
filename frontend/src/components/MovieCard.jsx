@@ -26,9 +26,11 @@ export default function MovieCard({movie}){
     }, [movie])
     
     return(
-        <article>
-            <a href={"https://imdb.com/title/"+movieInfo?.id}><img src={movieInfo?.primaryImage.url}></img></a>
-            <p>{movie.moviename}</p>
-        </article>
+        <a href={"https://imdb.com/title/"+movieInfo?.id}>
+            <article>
+                <img src={movieInfo?.primaryImage.url}></img>
+                <p>{movie.moviename + "(" + movie.releaseyear + ")"}</p>
+            </article>
+        </a>
     )
 }
