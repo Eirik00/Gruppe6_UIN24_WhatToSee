@@ -4,6 +4,7 @@ import { FaStar, FaSmile } from "react-icons/fa";
 import Layout from "./Layout"
 import { fetchUserExcept } from "../../sanity/services/usersServices";
 import { Link } from "react-router-dom";
+import MovieCard from "./MovieCard";
 
 export default function Home({user}){
     const [movies, setMovies] = useState(null)
@@ -21,16 +22,16 @@ export default function Home({user}){
     useEffect(()=>{
         getAllMovies()
         getUserExcept()
-        console.log(movies?.categoryMovies)
     },[user])
 
     return(
         <Layout user={user}>
             <main>
                 <h2>Hei, {user?.username}</h2>
-                <page>
-                    <h3><FaStar />Favorittfilmene dine!</h3>
-                </page>
+                <section>
+                    <h3><FaStar />Filmer jeg skal se!</h3>
+                    {user?.wishlist?.map((movie, index) => <MovieCard key={index} movie={movie}/> )}
+                </section>
                 <aside>
                     <h3><FaSmile />Jeg skal se sammen med...</h3>
                     <ul>x

@@ -1,11 +1,11 @@
 import { act, useEffect, useState } from 'react'
-import Layout from './components/Layout'
 import Login from './components/Login'
 import { Route, Routes, useNavigate} from 'react-router-dom'
 import './css/main.css'
 import Home from './components/Home'
 import { fetchUserById } from '../sanity/services/usersServices'
 import CategoryPage from './components/CategoryPage'
+import Categories from './components/Categories'
 
 function App() {
   const [activeUser, setActiveUser] = useState(null)
@@ -20,7 +20,7 @@ function App() {
         const user = await fetchUserById(userId)
         setActiveUser(user[0])
       }catch(error){
-        console.log(error)
+        console.log("Innlogging " + error)
         navigate("/")
       }
     }
@@ -28,13 +28,14 @@ function App() {
 
   useEffect(()=>{
     getUser()
-    console.log(localStorage.getItem("userid"))
+    console.log(activeUser)
   },[navigate])
 
   return (
       <Routes>
         <Route path="/" element={<Login /> } />
         <Route path="/home" element={<Home user={activeUser}/>} />
+        <Route path="/category" element={<Categories user={activeUser}/>} />
         <Route path="/category/:slug" element={<CategoryPage user={activeUser} />} />
       </Routes>
     )

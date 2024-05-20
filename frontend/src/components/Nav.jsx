@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { SlScreenDesktop, SlUser  } from "react-icons/sl"
+import { Link } from "react-router-dom"
 
 
 export default function Nav({user}){
@@ -9,7 +10,7 @@ export default function Nav({user}){
     },[user])
 
     return(
-            <nav>
+        <nav>
             <a href="#" id="home">What To See?</a>
             <ul>
                 <a href="#"> <SlScreenDesktop />    Hva skal jeg se?</a>
