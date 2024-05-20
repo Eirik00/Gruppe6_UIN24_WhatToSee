@@ -5,6 +5,10 @@ nav{
     background-color: $custom-white;
     min-height: 3rem;
     padding: 0 1rem;
+    
+    border-bottom: solid 3px black;
+  
+    
 
     #home{
         justify-content: left;
@@ -32,17 +36,39 @@ nav{
             color: $custom-white;
             background-color: #58787d;
             padding: 2rem;
-            border-bottom: solid black 3px;
+            border-top: solid 3px #58787d;
+            border-left: solid 3px #58787d;
+            border-right: solid 3px #58787d;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            
+            
+        }
+
+        li:hover{
+            background-color: $background-color;
+            color: #58787d;
+            border-top: solid 3px black;
+            border-left: solid 3px black;
+            border-right: solid 3px black;
+           
+           
         }
     }
 
     @media (max-width:1200px){
         
            ul{
-            background-color: green;
             flex-direction: column;
             width: 30%;
             text-align: center;
+
+            li{
+                border-top: solid 3px black;
+                border-left: solid 3px black;
+                border-right: solid 3px black;
+                border-radius: 0rem;
+            }
             
            }
            

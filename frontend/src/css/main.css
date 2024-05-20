@@ -5,6 +5,7 @@ nav {
   background-color: #f2f4f5;
   min-height: 3rem;
   padding: 0 1rem;
+  border-bottom: solid 3px black;
 }
 nav #home {
   justify-content: left;
@@ -29,15 +30,35 @@ nav ul li {
   color: #f2f4f5;
   background-color: #58787d;
   padding: 2rem;
-  border-bottom: solid black 3px;
+  border-top: solid 3px #58787d;
+  border-left: solid 3px #58787d;
+  border-right: solid 3px #58787d;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+nav ul li:hover {
+  background-color: #d1e3e5;
+  color: #58787d;
+  border-top: solid 3px black;
+  border-left: solid 3px black;
+  border-right: solid 3px black;
 }
 @media (max-width: 1200px) {
   nav ul {
-    background-color: green;
     flex-direction: column;
     width: 30%;
     text-align: center;
   }
+  nav ul li {
+    border-top: solid 3px black;
+    border-left: solid 3px black;
+    border-right: solid 3px black;
+    border-radius: 0rem;
+  }
+}
+
+article a img {
+  max-width: 200px;
 }
 
 :root {
