@@ -59,14 +59,17 @@ nav ul li:hover {
 }
 
 a article {
-  background-color: rgb(153, 203, 216);
+  background-color: #58787d;
   margin: 1.5rem;
   width: 24rem;
+  border: solid 2px black;
+  border-radius: 1rem;
 }
 a article img {
   padding: 0.5rem 0.5rem 0 0.5rem;
   width: 23rem;
   height: 35rem;
+  border-radius: 1.5rem;
 }
 a article p {
   font-size: 1.5rem;
@@ -75,6 +78,7 @@ a article p {
   padding-bottom: 0.5rem;
   margin: 0.5rem;
   word-break: break-all;
+  text-decoration: none;
 }
 
 :root {
@@ -113,7 +117,36 @@ a article p {
   justify-content: space-around;
 }
 :root body main #homepage #userlist {
-  background-color: gray;
+  background-color: #d1e3e5;
+  border: solid 3px black;
+  border-radius: 1rem;
+  text-shadow: 2px 2px #f2f4f5;
+}
+:root body main #homepage #userlist ul {
+  padding: 1rem;
+  list-style: none;
+  margin: auto;
+}
+:root body main #homepage #userlist ul li {
+  margin-top: 1rem;
+}
+:root body main #homepage #userlist ul li a {
+  text-decoration: none;
+  color: #f2f4f5;
+  text-shadow: 1px 1px black;
+  font-size: 2rem;
+  border-bottom: solid 2px black;
+  background-color: #58787d;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-width: 100%;
+  border-radius: 1rem;
+}
+:root body main #homepage #userlist ul li a:hover {
+  background-color: #d1e3e5;
+  color: #58787d;
+  border: solid 2px black;
+  border-bottom: 3px solid black;
 }
 :root body main h2 {
   font-size: 2rem;

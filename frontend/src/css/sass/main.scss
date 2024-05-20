@@ -41,7 +41,51 @@
                 }
             }
             #userlist{
-                background-color: gray;
+                background-color: $background-color;
+                border: solid 3px black;
+                border-radius: 1rem;
+                text-shadow: 2px 2px $custom-white;
+
+                ul{
+                    padding: 1rem;
+                    list-style: none;
+                    margin: auto;
+                   
+                    
+                    li{
+                        margin-top: 1rem;
+                        
+                      
+                        
+
+
+                        a{
+                            text-decoration: none;
+                            color: $custom-white;
+                            text-shadow: 1px 1px black;
+                            font-size: 2rem;
+                            border-bottom: solid 2px black;
+                            background-color: $custom-teal;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
+                            min-width: 100%;
+                            border-radius: 1rem;
+                        }
+
+                        a:hover{
+                            background-color: $background-color;
+                            color: $custom-teal;
+                            border: solid 2px black;
+                            border-bottom: 3px solid black;
+                            
+                            
+                        }
+                        
+                    }
+                }
+          
+
+                
             }
         }
         h2{
@@ -72,7 +116,7 @@
                 border-radius: 25px;
             }
             a:hover{
-                background-color: #58787d;
+                background-color: $custom-teal;
                 color: $custom-white;
 
             }

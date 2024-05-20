@@ -38,7 +38,7 @@ export default function Home({user}){
                     </article>
                     <article id="userlist">
                         <h3><FaSmile />Jeg skal se sammen med...</h3>
-                        <ul>x
+                        <ul>
                             {users?.map((user, index) => <li key={index}><Link to={"/compare/"+ user._id}>{user.username}</Link></li>)}
                         </ul>
                     </article>
