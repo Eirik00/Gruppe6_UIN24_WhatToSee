@@ -6,6 +6,7 @@ import Home from './components/Home'
 import { fetchUserById } from '../sanity/services/usersServices'
 import CategoryPage from './components/CategoryPage'
 import Categories from './components/Categories'
+import Compare from './components/Compare'
 
 function App() {
   const [activeUser, setActiveUser] = useState(null)
@@ -37,6 +38,7 @@ function App() {
         <Route path="/home" element={<Home user={activeUser}/>} />
         <Route path="/category" element={<Categories user={activeUser}/>} />
         <Route path="/category/:slug" element={<CategoryPage user={activeUser} />} />
+        <Route path="/compare/:slug" element={<Compare user={activeUser} /> } />
       </Routes>
     )
 }

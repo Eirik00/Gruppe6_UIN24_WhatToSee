@@ -67,6 +67,7 @@ a article img {
 }
 :root body {
   background-color: #d1e3e5;
+  margin: 0;
 }
 :root body main {
   max-width: 80%;
