@@ -12,6 +12,11 @@ export const users = {
             name: "wishlist",
             type: "array",
             of: [{ type: "reference", to: { type: "movies" } }]
+        },{
+            title: "Favorittsjanger",
+            name: "favcategory",
+            type: "array",
+            of: [{type: "reference", to: { type: "categories" }}]
         }
     ]
 }
