@@ -1,21 +1,18 @@
-:root {
-  @import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
-  font-family: "Freeman", sans-serif;
-}
-:root body {
-  background-color: #bd1c11;
-}
-:root body nav {
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+nav {
   display: flex;
-  justify-content: space-between;
   background-color: #f2f4f5;
   min-height: 3rem;
   padding: 0 1rem;
 }
-:root body nav #logo {
+nav #home {
   justify-content: left;
+  font-size: 4rem;
+  text-decoration: none;
+  color: #58787d;
 }
-:root body nav ul {
+nav ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -23,13 +20,31 @@
   margin-left: auto;
   padding: 0;
   width: 50%;
+  font-size: 1.2rem;
 }
-:root body nav ul li {
-  color: #f2f4f5;
+nav ul a {
   text-decoration: none;
-  background-color: #991107;
+}
+nav ul li {
+  color: #f2f4f5;
+  background-color: #58787d;
   padding: 2rem;
   border-bottom: solid black 3px;
+}
+@media (max-width: 1200px) {
+  nav ul {
+    background-color: green;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+  }
+}
+
+:root {
+  font-family: "Freeman", sans-serif;
+}
+:root body {
+  background-color: #d1e3e5;
 }
 :root body main {
   max-width: 500px;
@@ -60,7 +75,7 @@
   border-radius: 25px;
 }
 :root body main a:hover {
-  background-color: #bd1c11;
+  background-color: #58787d;
   color: #f2f4f5;
 }
 

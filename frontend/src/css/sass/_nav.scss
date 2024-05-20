@@ -1,0 +1,53 @@
+@import 'colors';
+@import 'fonts';
+nav{
+    display: flex;
+    background-color: $custom-white;
+    min-height: 3rem;
+    padding: 0 1rem;
+
+    #home{
+        justify-content: left;
+        font-size: 4rem;
+        text-decoration: none;
+        color: #58787d;
+
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-left: auto;
+        padding: 0;
+        width: 50%;
+        font-size: 1.2rem;
+            
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            color: $custom-white;
+            background-color: #58787d;
+            padding: 2rem;
+            border-bottom: solid black 3px;
+        }
+    }
+
+    @media (max-width:1200px){
+        
+           ul{
+            background-color: green;
+            flex-direction: column;
+            width: 30%;
+            text-align: center;
+            
+           }
+           
+        
+    }
+    
+}
+

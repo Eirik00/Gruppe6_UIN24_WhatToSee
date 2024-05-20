@@ -1,51 +1,13 @@
+@import 'colors';
+@import 'fonts';
+@import 'nav';
+@import 'moviecard';
+
 :root{
-    @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
-    $font: "Freeman", sans-serif;
     font-family: $font;
-    $custom-red: #bd1c11;
-    $custom-white: #f2f4f5;
 
     body{
-        background-color: $custom-red;
-
-        nav{
-            display: flex;
-            justify-content: space-between;
-            background-color: $custom-white;
-            min-height: 3rem;
-            padding: 0 1rem;
-
-            #logo{
-                justify-content: left;
-             
-              
-            }
-
-            ul{
-                list-style-type: none;
-                display: flex;
-                justify-content: space-between;
-                margin: 0;
-                margin-left: auto;
-                padding: 0;
-                width: 50%;
-                
-             
-
-                li{
-                    
-                    color: $custom-white;
-                    text-decoration: none;
-                    background-color: #991107;
-                    padding: 2rem;
-                    border-bottom: solid black 3px;
-                    
-                    
-                }
-            }
-            
-            
-        }
+        background-color: $background-color;
         
         
 
@@ -81,14 +43,17 @@
             border-radius: 25px;
         }
         a:hover{
-            background-color: $custom-red;
+            background-color: #58787d;
             color: $custom-white;
+
         }
         
     
       }
     }
 }
+
+
 
 
 
