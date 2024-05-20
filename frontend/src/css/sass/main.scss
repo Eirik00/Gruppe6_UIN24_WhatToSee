@@ -1,9 +1,8 @@
 @import 'colors';
+@import 'fonts';
 @import 'nav';
 
 :root{
-    @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
-    $font: "Freeman", sans-serif;
     font-family: $font;
 
     body{

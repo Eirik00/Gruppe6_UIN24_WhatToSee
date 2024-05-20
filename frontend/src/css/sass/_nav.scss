@@ -1,12 +1,17 @@
 @import 'colors';
+@import 'fonts';
 nav{
     display: flex;
     background-color: $custom-white;
     min-height: 3rem;
     padding: 0 1rem;
 
-    #logo{
+    #home{
         justify-content: left;
+        font-size: 4rem;
+        text-decoration: none;
+        color: #58787d;
+
     }
 
     ul{
@@ -17,6 +22,7 @@ nav{
         margin-left: auto;
         padding: 0;
         width: 50%;
+        font-size: 1.2rem;
             
         a{
             text-decoration: none;
