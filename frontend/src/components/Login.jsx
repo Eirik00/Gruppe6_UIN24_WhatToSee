@@ -1,6 +1,6 @@
 import { MdMovieFilter } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { fetchAllUsers, fetchUserById } from "../../sanity/services/usersServices";
+import { fetchAllUsers } from "../../sanity/services/usersServices";
 import { useEffect, useState } from "react";
 
 export default function Login(){
