@@ -15,7 +15,7 @@ export default function Home({user}){
     }
 
     const getUserExcept = async () =>{
-        const data = await fetchUserExcept(user._id)
+        const data = await fetchUserExcept(user?._id)
         setUsers(data)
     }
 

@@ -13,6 +13,10 @@ export async function fetchAllUsers(){
             _id,
             moviename,
             releaseyear
+        },favmovie[]->{
+            _id,
+            moviename,
+            releaseyear
         }
     }`)
     return data
@@ -31,6 +35,10 @@ export async function fetchUserById(id){
             _id,
             moviename,
             releaseyear
+        },favmovie[]->{
+            _id,
+            moviename,
+            releaseyear
         }
     }`, {id})
     return data
@@ -45,6 +53,10 @@ export async function fetchUserExcept(id){
             "slug": categoryurl.current
         },
         wishlist[]->{
+            _id,
+            moviename,
+            releaseyear
+        },favmovie[]->{
             _id,
             moviename,
             releaseyear
