@@ -1,0 +1,89 @@
+@import 'colors';
+@import 'fonts';
+@import 'nav';
+@import 'moviecard';
+@import 'categories';
+@import 'homepage';
+
+:root{
+    font-family: $font;
+
+    body{
+        background-color: $background-color;
+        margin: 0;
+        
+
+    main {
+        
+        max-width: 80%;
+        padding: 3rem;
+        text-align: center;
+        background-color: $custom-white;
+        border-radius: 20px;
+        margin: 200px auto;
+        border: solid 3px black;
+        min-height: 220px;
+
+        #movielist{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #comparePage{
+            display: flex;
+            justify-content: space-evenly;
+            article{
+                width: 33%;
+                text-align: left;
+                h3{
+                    padding: 0;
+                }
+            }
+        }
+
+    
+        h2{
+            font-size: 2rem;
+            text-align: left;
+        }
+
+        #h2_login{
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        h3{
+            padding: 20px;
+            font-size: 1.5rem;
+        }
+        div {
+            
+            a{
+                text-decoration: none;
+                padding: 20px;
+                margin: 10px;
+                border: solid 2px black;
+                color: black;
+                background-color: #e0e0e0;
+                font-family: $font;
+                font-size: 20px;
+                border-radius: 25px;
+            }
+            a:hover{
+                background-color: $custom-teal;
+                color: $custom-white;
+
+            }
+        }
+        
+    
+      }
+    }
+}
+
+
+
+
+
+  
