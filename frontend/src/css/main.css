@@ -58,7 +58,8 @@ nav ul li:hover {
 }
 
 article a img {
-  max-width: 200px;
+  width: 35rem;
+  height: 50rem;
 }
 
 :root {
@@ -68,7 +69,7 @@ article a img {
   background-color: #d1e3e5;
 }
 :root body main {
-  max-width: 500px;
+  max-width: 80%;
   padding: 3rem;
   text-align: center;
   background-color: #f2f4f5;
@@ -77,14 +78,31 @@ article a img {
   border: solid 3px black;
   min-height: 220px;
 }
+:root body main #movielist {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+:root body main #homepage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+:root body main #homepage article {
+  flex-grow: 1;
+}
+:root body main #homepage #userlist {
+  background-color: gray;
+}
 :root body main h2 {
   font-size: 2rem;
+  text-align: left;
 }
 :root body main h3 {
   padding: 20px;
   font-size: 1.5rem;
 }
-:root body main a {
+:root body main div a {
   text-decoration: none;
   padding: 20px;
   margin: 10px;
@@ -95,7 +113,7 @@ article a img {
   font-size: 20px;
   border-radius: 25px;
 }
-:root body main a:hover {
+:root body main div a:hover {
   background-color: #58787d;
   color: #f2f4f5;
 }

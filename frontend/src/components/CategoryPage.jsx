@@ -22,7 +22,9 @@ export default function CategoryPage({user}){
         <Layout user={user}>
             <main>
                 <h2>Sjanger: {category?.categorytitle + "(" + category?.categorymovies.length + " filmer)"}</h2>
-                {category?.categorymovies.map((movie, index) =><MovieCard key={index} movie={movie} />)}
+                <section id="movielist">
+                    {category?.categorymovies.map((movie, index) =><MovieCard key={index} movie={movie} />)}
+                </section>
             </main>
         </Layout>
     )

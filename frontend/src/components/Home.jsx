@@ -28,16 +28,18 @@ export default function Home({user}){
         <Layout user={user}>
             <main>
                 <h2>Hei, {user?.username}</h2>
-                <section>
-                    <h3><FaStar />Filmer jeg skal se!</h3>
-                    {user?.wishlist?.map((movie, index) => <MovieCard key={index} movie={movie}/> )}
+                <section id="homepage">
+                    <article>
+                        <h3><FaStar />Filmer jeg skal se!</h3>
+                        {user?.wishlist?.map((movie, index) => <MovieCard key={index} movie={movie}/> )}
+                    </article>
+                    <article id="userlist">
+                        <h3><FaSmile />Jeg skal se sammen med...</h3>
+                        <ul>x
+                            {users?.map((user, index) => <li key={index}><Link to={"/compare/"+ user._id}>{user.username}</Link></li>)}
+                        </ul>
+                    </article>
                 </section>
-                <aside>
-                    <h3><FaSmile />Jeg skal se sammen med...</h3>
-                    <ul>x
-                        {users?.map((user, index) => <li key={index}><Link to={"/compare/"+ user._id}>{user.username}</Link></li>)}
-                    </ul>
-                </aside>
             </main>
         </Layout>
     )

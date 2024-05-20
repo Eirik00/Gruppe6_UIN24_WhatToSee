@@ -23,7 +23,9 @@ export default function Login(){
         <main>
             <h2><MdMovieFilter /> Velkommen til What-To-See <MdMovieFilter /></h2>
             <h3>Hvem skal logge inn?</h3>
-            {users?.map((user, index) => <Link onClick={() => logInAsUser(user._id)} key={index} to="home">{user.username}</Link>)}
+            <div>
+                {users?.map((user, index) => <Link onClick={() => logInAsUser(user._id)} key={index} to="home">{user.username}</Link>)}
+            </div>
         </main>
     )
 }

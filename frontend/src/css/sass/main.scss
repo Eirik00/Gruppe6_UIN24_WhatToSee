@@ -13,7 +13,7 @@
 
     main {
         
-        max-width: 500px;
+        max-width: 80%;
         padding: 3rem;
         text-align: center;
         background-color: $custom-white;
@@ -22,30 +22,51 @@
         border: solid 3px black;
         min-height: 220px;
 
+        #movielist{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #homepage{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            article{
+                flex-grow: 1;
+            }
+            #userlist{
+                background-color: gray;
+            }
+        }
         h2{
             font-size: 2rem;
+            text-align: left;
         }
 
         h3{
             padding: 20px;
             font-size: 1.5rem;
         }
+        div {
+            
+            a{
+                text-decoration: none;
+                padding: 20px;
+                margin: 10px;
+                border: solid 2px black;
+                color: black;
+                background-color: #e0e0e0;
+                font-family: $font;
+                font-size: 20px;
+                border-radius: 25px;
+            }
+            a:hover{
+                background-color: #58787d;
+                color: $custom-white;
 
-        a{
-            text-decoration: none;
-            padding: 20px;
-            margin: 10px;
-            border: solid 2px black;
-            color: black;
-            background-color: #e0e0e0;
-            font-family: $font;
-            font-size: 20px;
-            border-radius: 25px;
-        }
-        a:hover{
-            background-color: #58787d;
-            color: $custom-white;
-
+            }
         }
         
     
