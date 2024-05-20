@@ -6,6 +6,7 @@ import './css/main.css'
 import Home from './components/Home'
 import { fetchUserById } from '../sanity/services/usersServices'
 import CategoryPage from './components/CategoryPage'
+import Categories from './components/Categories'
 
 function App() {
   const [activeUser, setActiveUser] = useState(null)
@@ -20,7 +21,7 @@ function App() {
         const user = await fetchUserById(userId)
         setActiveUser(user[0])
       }catch(error){
-        console.log(error)
+        console.log("Innlogging " + error)
         navigate("/")
       }
     }
@@ -35,6 +36,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login /> } />
         <Route path="/home" element={<Home user={activeUser}/>} />
+        <Route path="/category" element={<Categories user={activeUser}/>} />
         <Route path="/category/:slug" element={<CategoryPage user={activeUser} />} />
       </Routes>
     )

@@ -28,9 +28,9 @@ export default function Home({user}){
         <Layout user={user}>
             <main>
                 <h2>Hei, {user?.username}</h2>
-                <page>
-                    <h3><FaStar />Favorittfilmene dine!</h3>
-                </page>
+                <section>
+                    <h3><FaStar />Filmer jeg skal se!</h3>
+                </section>
                 <aside>
                     <h3><FaSmile />Jeg skal se sammen med...</h3>
                     <ul>x
