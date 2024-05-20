@@ -1,15 +1,29 @@
 a{
+    
     article{
         background-color: $background-color;
         margin: 1.5rem;
         width: 24rem;
         border: solid 2px black;
         border-radius: 1rem;
+        
+
+        @media (max-width:1920px){
+            width: 12rem;
+
+         }
+
         img{
             padding: .5rem .5rem 0 .5rem ;
             width: 23rem;
             height: 35rem;
             border-radius: 1.5rem;
+
+            @media (max-width:1920px){
+               height:auto;
+               width: 11rem;
+
+            }
         }
         p{
             font-size: 1.5rem;
@@ -22,3 +36,4 @@ a{
         }
     }
 }
+

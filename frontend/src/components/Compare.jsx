@@ -52,11 +52,11 @@ export default function Compare({user}){
                         <h3>Utforsk!</h3>
                         <p>Dere begge liker disse sjangerne, sjekk hvilke filmer som finnes å velge mellom:</p>
                         <ul>
-                            {favCat?.map((category, index) => <li><Link key={index} to={"/category/"+category.slug}>{category.categorytitle}</Link></li>)}
+                            {favCat?.map((category, index) => <li key={index}><Link to={"/category/"+category.slug}>{category.categorytitle}</Link></li>)}
                         </ul>
                     </article>
                 </section>
-                <article>
+                <article id="ønskeliste">
                     <h3>Ønskelister og Favoritter</h3>
                     <p>Dere har noen filmer som er på ønskelisten til en av dere og favorittlisten til den andre! Kanskje kan en av dere få innføre den andre i en ny filmopplevelse...?!</p>
                     <section>

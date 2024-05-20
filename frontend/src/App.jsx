@@ -29,7 +29,6 @@ function App() {
 
   useEffect(()=>{
     getUser()
-    console.log(activeUser)
   },[navigate])
 
   return (
