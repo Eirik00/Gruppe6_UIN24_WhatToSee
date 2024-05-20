@@ -13,9 +13,9 @@ export default function Nav({user}){
         <nav>
             <a href="#" id="home">What To See?</a>
             <ul>
-                <a href="#"> <SlScreenDesktop />    Hva skal jeg se?</a>
-                <a href="#">    Bla gjennom Sjangere</a>
-                <a href="#"><SlUser />  {user?.username}</a>
+                <li href="#"><Link to="/home"><SlScreenDesktop />Hva skal jeg se?</Link></li>
+                <li href="#"><Link to="/category" >Bla gjennom Sjangere</Link></li>
+                <li href="#"><SlUser />{user?.username}</li>
             </ul>
         </nav>
     )
