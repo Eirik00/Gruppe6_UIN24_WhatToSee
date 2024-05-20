@@ -1,5 +1,4 @@
 import { act, useEffect, useState } from 'react'
-import Layout from './components/Layout'
 import Login from './components/Login'
 import { Route, Routes, useNavigate} from 'react-router-dom'
 import './css/main.css'
@@ -29,7 +28,7 @@ function App() {
 
   useEffect(()=>{
     getUser()
-    console.log(localStorage.getItem("userid"))
+    console.log(activeUser)
   },[navigate])
 
   return (
