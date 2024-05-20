@@ -20,6 +20,7 @@ export default function MovieCard({movie}){
         console.error(error);
         }
     }
+    /* Var usikker om hvordan man skulle hente ut spesifik informasjon fra api så gjorde det slikt */
     useEffect(()=>{
         getMovie()
     }, [movie])
