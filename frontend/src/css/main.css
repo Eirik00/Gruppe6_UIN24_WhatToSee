@@ -17,8 +17,10 @@ nav ul {
   width: 50%;
 }
 nav ul a {
-  color: #f2f4f5;
   text-decoration: none;
+}
+nav ul li {
+  color: #f2f4f5;
   background-color: #58787d;
   padding: 2rem;
   border-bottom: solid black 3px;

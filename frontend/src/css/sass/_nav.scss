@@ -7,8 +7,6 @@ nav{
 
     #logo{
         justify-content: left;
-     
-      
     }
 
     ul{
@@ -19,18 +17,16 @@ nav{
         margin-left: auto;
         padding: 0;
         width: 50%;
-        
-     
-
-        a{
             
-            color: $custom-white;
+        a{
             text-decoration: none;
+        }
+
+        li{
+            color: $custom-white;
             background-color: #58787d;
             padding: 2rem;
             border-bottom: solid black 3px;
-            
-            
         }
     }
 
