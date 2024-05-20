@@ -12,6 +12,7 @@ nav #home {
   font-size: 4rem;
   text-decoration: none;
   color: #58787d;
+  text-shadow: 2px 2px black;
 }
 nav ul {
   list-style-type: none;
@@ -117,6 +118,10 @@ a article p {
 :root body main h2 {
   font-size: 2rem;
   text-align: left;
+}
+:root body main #h2_login {
+  text-align: center;
+  font-size: 3rem;
 }
 :root body main h3 {
   padding: 20px;
