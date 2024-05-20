@@ -16,7 +16,6 @@ export default function CategoryPage({user}){
 
     useEffect(()=>{
         getCategoryBySlug(slug)
-        console.log(category)
     },[slug])
     return(
         <Layout user={user}>

@@ -16,7 +16,6 @@ export default function MovieCard({movie}){
         const response = await fetch(url, options);
         const result = await response.json();
         setMovieInfo(result.results[0]);
-        console.log(movieInfo)
         } catch (error) {
         console.error(error);
         }

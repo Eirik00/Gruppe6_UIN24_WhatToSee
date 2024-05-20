@@ -52,7 +52,7 @@ export default function Compare({user}){
                         <h3>Utforsk!</h3>
                         <p>Dere begge liker disse sjangerne, sjekk hvilke filmer som finnes å velge mellom:</p>
                         <ul>
-                            {favCat?.map((category, index) => <li><Link key={index} to={"/category/"+category.slug}>{category.categorytitle}</Link></li>)}
+                            {favCat?.map((category, index) => <li key={index}><Link to={"/category/"+category.slug}>{category.categorytitle}</Link></li>)}
                         </ul>
                     </article>
                 </section>
