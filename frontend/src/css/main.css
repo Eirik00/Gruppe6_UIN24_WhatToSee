@@ -201,6 +201,17 @@ a article p {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+:root body main #comparePage {
+  display: flex;
+  justify-content: space-evenly;
+}
+:root body main #comparePage article {
+  width: 33%;
+  text-align: left;
+}
+:root body main #comparePage article h3 {
+  padding: 0;
+}
 :root body main h2 {
   font-size: 2rem;
   text-align: left;

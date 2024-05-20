@@ -30,6 +30,18 @@
             flex-wrap: wrap;
         }
 
+        #comparePage{
+            display: flex;
+            justify-content: space-evenly;
+            article{
+                width: 33%;
+                text-align: left;
+                h3{
+                    padding: 0;
+                }
+            }
+        }
+
     
         h2{
             font-size: 2rem;

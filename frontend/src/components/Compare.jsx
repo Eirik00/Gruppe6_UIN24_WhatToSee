@@ -28,7 +28,7 @@ export default function Compare({user}){
 
     useEffect(()=>{
         getComparedUser()
-    },[user])
+    },[user, comparedUser])
     return(
         <Layout user={user}>
             <main>
