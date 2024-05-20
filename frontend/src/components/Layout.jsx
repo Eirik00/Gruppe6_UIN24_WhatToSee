@@ -1,11 +1,10 @@
-import Header from "./Header"
+import { Outlet } from "react-router-dom"
 import Nav from "./Nav"
 
-export default function Layout({children}){
+export default function Layout({user, children}){
     return(
         <>
-            <Header />
-            <Nav />
+            <Nav user={user}/>
             {children}
         </>
     )

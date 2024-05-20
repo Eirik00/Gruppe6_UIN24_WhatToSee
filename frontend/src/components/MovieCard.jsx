@@ -1,5 +1,8 @@
+import { useEffect, useState } from "react";
+
 export default function MovieCard({movie}){
-    const url = 'https://moviesdatabase.p.rapidapi.com/titles/search/title/Kingdom%20of%20Heaven?exact=true&year=2005&titleType=movie';
+    const [movieInfo, setMovieInfo] = useState(null)
+    const url = 'https://moviesdatabase.p.rapidapi.com/titles/search/title/'+movie.moviename+'?exact=true&year='+movie.releaseyear+'&titleType=movie';
     const options = {
         method: 'GET',
         headers: {
@@ -11,19 +14,21 @@ export default function MovieCard({movie}){
     const getMovie = async() =>{
         try {
         const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result);
+        const result = await response.json();
+        setMovieInfo(result.results[0]);
+        console.log(movieInfo)
         } catch (error) {
         console.error(error);
         }
     }
     useEffect(()=>{
         getMovie()
-    }, [])
+    }, [movie])
     
     return(
         <article>
-            
+            <a href={"https://imdb.com/title/"+movieInfo?.id}><img src={movieInfo?.primaryImage.url}></img></a>
+            <p>{movie.moviename}</p>
         </article>
     )
 }
