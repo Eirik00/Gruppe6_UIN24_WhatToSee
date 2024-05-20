@@ -1,0 +1,71 @@
+@import 'colors';
+@import 'fonts';
+
+#categories{
+    h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    ul{
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+        
+    li{
+       
+        display: flex;
+        flex-direction: column;
+        padding: 1.4rem;
+        
+        a{
+            text-decoration: none;
+            color: $custom-white;
+            text-shadow: 1px 1px black;
+            font-size: 2rem;
+            border: solid 2px black;
+            background-color: $custom-teal;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            min-width: 100%;
+            border-radius: 1rem;
+         
+            
+        }
+
+        a:hover{
+            background-color: $background-color;
+            color: $custom-teal;
+           
+            
+            
+        }
+
+        button{
+            text-decoration: none;
+            color: $custom-white;
+            text-shadow: 1px 1px black;
+            font-size: 1.2rem;
+            border: solid 2px black;
+            border-bottom: solid 2px black;
+            border-top: none;
+            background-color: $custom-teal;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            margin-left: 2.3rem;
+            padding: 0.5rem;
+            
+        }
+
+        button:hover{
+            background-color: $background-color;
+            color: $custom-teal;
+            
+            
+        }
+        
+    }
+}
+}

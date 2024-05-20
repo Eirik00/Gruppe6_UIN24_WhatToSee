@@ -3,6 +3,7 @@ import Layout from "./Layout"
 import { addFavouriteCategory, fetchAllCategories } from "../../sanity/services/categoryServices"
 import { Link } from "react-router-dom"
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
+import { MdOutlineCategory } from "react-icons/md";
 
 export default function Categories({user}){
     const [categories, setCategories] = useState(null)
@@ -28,8 +29,8 @@ export default function Categories({user}){
     
     return(
         <Layout user={user}>
-            <main>
-                <h2>Sjangere</h2>
+            <main id="categories">
+                <h2><MdOutlineCategory />   Sjangere    <MdOutlineCategory /></h2>
                 <ul>
                     {
                     categories?.map((category, index)=><li key={index}><Link to={"/category/"+category.slug} >{category.categorytitle}</Link>

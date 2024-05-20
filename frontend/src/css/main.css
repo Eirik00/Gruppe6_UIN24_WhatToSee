@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
 nav {
   display: flex;
   background-color: #f2f4f5;
@@ -81,6 +83,102 @@ a article p {
   text-decoration: none;
 }
 
+#categories h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+#categories ul {
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+#categories ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+}
+#categories ul li a {
+  text-decoration: none;
+  color: #f2f4f5;
+  text-shadow: 1px 1px black;
+  font-size: 2rem;
+  border: solid 2px black;
+  background-color: #58787d;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-width: 100%;
+  border-radius: 1rem;
+}
+#categories ul li a:hover {
+  background-color: #d1e3e5;
+  color: #58787d;
+}
+#categories ul li button {
+  text-decoration: none;
+  color: #f2f4f5;
+  text-shadow: 1px 1px black;
+  font-size: 1.2rem;
+  border: solid 2px black;
+  border-bottom: solid 2px black;
+  border-top: none;
+  background-color: #58787d;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  margin-left: 2.3rem;
+  padding: 0.5rem;
+}
+#categories ul li button:hover {
+  background-color: #d1e3e5;
+  color: #58787d;
+}
+
+#homepage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#homepage #wishlist {
+  max-width: 70%;
+}
+#homepage #wishlist section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#homepage #userlist {
+  background-color: #d1e3e5;
+  border: solid 3px black;
+  border-radius: 1rem;
+  text-shadow: 2px 2px #f2f4f5;
+}
+#homepage #userlist ul {
+  padding: 1rem;
+  list-style: none;
+  margin: auto;
+}
+#homepage #userlist ul li {
+  margin-top: 1rem;
+}
+#homepage #userlist ul li a {
+  text-decoration: none;
+  color: #f2f4f5;
+  text-shadow: 1px 1px black;
+  font-size: 2rem;
+  border-bottom: solid 2px black;
+  background-color: #58787d;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-width: 100%;
+  border-radius: 1rem;
+}
+#homepage #userlist ul li a:hover {
+  background-color: #d1e3e5;
+  color: #58787d;
+  border: solid 2px black;
+  border-bottom: 3px solid black;
+}
+
 :root {
   font-family: "Freeman", sans-serif;
 }
@@ -102,51 +200,6 @@ a article p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-:root body main #homepage {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-:root body main #homepage #wishlist {
-  max-width: 70%;
-}
-:root body main #homepage #wishlist section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-:root body main #homepage #userlist {
-  background-color: #d1e3e5;
-  border: solid 3px black;
-  border-radius: 1rem;
-  text-shadow: 2px 2px #f2f4f5;
-}
-:root body main #homepage #userlist ul {
-  padding: 1rem;
-  list-style: none;
-  margin: auto;
-}
-:root body main #homepage #userlist ul li {
-  margin-top: 1rem;
-}
-:root body main #homepage #userlist ul li a {
-  text-decoration: none;
-  color: #f2f4f5;
-  text-shadow: 1px 1px black;
-  font-size: 2rem;
-  border-bottom: solid 2px black;
-  background-color: #58787d;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  min-width: 100%;
-  border-radius: 1rem;
-}
-:root body main #homepage #userlist ul li a:hover {
-  background-color: #d1e3e5;
-  color: #58787d;
-  border: solid 2px black;
-  border-bottom: 3px solid black;
 }
 :root body main h2 {
   font-size: 2rem;
