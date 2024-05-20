@@ -4,6 +4,7 @@
 @import 'moviecard';
 @import 'categories';
 @import 'homepage';
+@import 'compare';
 
 :root{
     font-family: $font;
@@ -28,18 +29,6 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-        }
-
-        #comparePage{
-            display: flex;
-            justify-content: space-evenly;
-            article{
-                width: 33%;
-                text-align: left;
-                h3{
-                    padding: 0;
-                }
-            }
         }
 
     

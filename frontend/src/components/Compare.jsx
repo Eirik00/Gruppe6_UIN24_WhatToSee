@@ -56,7 +56,7 @@ export default function Compare({user}){
                         </ul>
                     </article>
                 </section>
-                <article>
+                <article id="ønskeliste">
                     <h3>Ønskelister og Favoritter</h3>
                     <p>Dere har noen filmer som er på ønskelisten til en av dere og favorittlisten til den andre! Kanskje kan en av dere få innføre den andre i en ny filmopplevelse...?!</p>
                     <section>
