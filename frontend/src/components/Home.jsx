@@ -29,9 +29,12 @@ export default function Home({user}){
             <main>
                 <h2>Hei, {user?.username}</h2>
                 <section id="homepage">
-                    <article>
+                    <article id="wishlist">
                         <h3><FaStar />Filmer jeg skal se!</h3>
-                        {user?.wishlist?.map((movie, index) => <MovieCard key={index} movie={movie}/> )}
+                        <p>Disse filmene ligger i ønskelisten din:</p>
+                        <section>
+                            {user?.wishlist?.map((movie, index) => <MovieCard key={index} movie={movie}/> )}
+                        </section>
                     </article>
                     <article id="userlist">
                         <h3><FaSmile />Jeg skal se sammen med...</h3>

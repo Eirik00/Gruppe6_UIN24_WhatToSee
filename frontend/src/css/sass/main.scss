@@ -31,10 +31,22 @@
         #homepage{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            
-            article{
-                flex-grow: 1;
+            justify-content: space-evenly;
+            #wishlist{
+                max-width: 70%;
+                section{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    article{
+                        a{
+                            width: 35%;
+                            img{
+                                height: auto;
+                            }
+                        }
+                    }
+                }
             }
             #userlist{
                 background-color: gray;

@@ -86,10 +86,21 @@ article a img {
 :root body main #homepage {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-:root body main #homepage article {
-  flex-grow: 1;
+:root body main #homepage #wishlist {
+  max-width: 70%;
+}
+:root body main #homepage #wishlist section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+:root body main #homepage #wishlist section article a {
+  width: 35%;
+}
+:root body main #homepage #wishlist section article a img {
+  height: auto;
 }
 :root body main #homepage #userlist {
   background-color: gray;
